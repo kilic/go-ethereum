@@ -24,7 +24,7 @@ func TestFuzzMultiplication(t *testing.T) {
 			mulNoADX(c1, a, b)
 			mulFallback(c2, a, b)
 			if !c0.equal(c1) || !c0.equal(c2) {
-				t.Fatalf("a: %#x, b: %#x, c0: %#x, c1: %#x, c2: %#x", a.bytes(), b.bytes(), c0.bytes(), c1.bytes(), c1.bytes()))
+				t.Fatalf("a: %#x, b: %#x, c0: %#x, c1: %#x, c2: %#x", a.bytes(), b.bytes(), c0.bytes(), c1.bytes(), c1.bytes())
 			}
 		}
 		fmt.Println(j)
