@@ -1,0 +1,10 @@
+panic: a: 0x1677244df6b44d9d161cbd7f231a8c89d1c1e6de42e026a5c9335fc46b823f401a85646581113133a96631343461bbb9, b: 0x05613f5ec1616afece2a13c6dda0df816e72ca5ce45c40e793018ff279047a1e280d3768ffbe6666f26866666561dada, c0: 0x0d10186b93541297509116079adbbab5a8008d1acd968fab01bb2cae8810501ceb87d61156474edc00f22cd76209130c, c1: 0x0d10186b93541297509116079adbbab5a8008d1acd968fab01bb2cae8810501ceb87d61156474edc00f22cd76209130c, c2: 0x0d10186b93541297509116079adbbab5a8008d1acd968fab01bb2cae8810501ceb87d61156474edc00f22cd76209130c
+
+goroutine 1 [running]:
+github.com/ethereum/go-ethereum/crypto/bls12381.FuzzBackendMultiplication(0x4010000, 0x60, 0x60, 0x4)
+	/Users/aeiou/dev/ethereum/pr-bls/go-ethereum/crypto/bls12381/arithmetic_fuzz.go:27 +0x73d
+go-fuzz-dep.Main(0xc000088f80, 0x1, 0x1)
+	/var/folders/3v/czmmk8310kn8_x84znf53mg80000gn/T/go-fuzz-build291666008/goroot/src/go-fuzz-dep/main.go:36 +0x1b6
+main.main()
+	/var/folders/3v/czmmk8310kn8_x84znf53mg80000gn/T/go-fuzz-build291666008/gopath/src/github.com/ethereum/go-ethereum/crypto/bls12381/go.fuzz.main/main.go:15 +0x52
+exit status 2
